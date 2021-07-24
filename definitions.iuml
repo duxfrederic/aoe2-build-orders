@@ -1,9 +1,9 @@
-!$path   = "D:\projects\aoe2 chart\assets\"
+!$path   = "assets/"
 
 skinparam {
   shadowing true
   backgroundColor white
-  handwritten true
+  handwritten false
   default {
     FontSize 12
     FontName Consolas
@@ -35,24 +35,24 @@ skinparam {
 
 !function resources($wood, $food, $gold, $stone, $current_population, $max_population)
   floating note right
-    <img:$path\Wood20x20.png><b>$wood</b>resource_space($wood)<img:$path\Food20x20.png><b>$food</b>resource_space($food)<img:$path\Gold20x20.png><b>$gold</b>resource_space($gold)<img:$path\Stone20x20.png><b>$stone</b>resource_space($stone)<img:$path\town_center20x20.png><b>$current_population/$max_population</b>
+    <img:$path/Wood20x20.png><b>$wood</b>resource_space($wood)<img:$path/Food20x20.png><b>$food</b>resource_space($food)<img:$path/Gold20x20.png><b>$gold</b>resource_space($gold)<img:$path/Stone20x20.png><b>$stone</b>resource_space($stone)<img:$path/town_center20x20.png><b>$current_population/$max_population</b>
   end note
 !endfunction
 
 !function build($building1)
   floating note left
-    <img:D:\projects\aoe2 chart\assets\$building1.png>
+    <img:$path/$building1.png>
   end note
 !endfunction
 
 !function build($building1, $building2)
   floating note left
-    <img:D:\projects\aoe2 chart\assets\$building1.png> <img:D:\projects\aoe2 chart\assets\$building2.png>
+    <img:$path/$building1.png> <img:$path/$building2.png>
   end note
 !endfunction
 
 !function build($building1, $building2, $building3)
   floating note left
-    <img:D:\projects\aoe2 chart\assets\$building1.png> <img:D:\projects\aoe2 chart\assets\$building2.png> <img:D:\projects\aoe2 chart\assets\$building3.png>
+    <img:$path/$building1.png> <img:$path/$building2.png> <img:$path/$building3.png>
   end note
 !endfunction
